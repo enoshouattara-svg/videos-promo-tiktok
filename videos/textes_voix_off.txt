@@ -1,0 +1,109 @@
+﻿TEXTES DES VOIX OFF (voix de femme : Microsoft Hortense, installée sur ton ordinateur)
+Chaque phrase est dite à l'instant indiqué (en secondes).
+Pour changer un texte : modifie la liste VOICExx dans source/scenes_*.py, puis relance :
+    python source/build.py voice all hortense --force
+
+--- Vidéo 01 · sans-site-tu-rates-des-clients (18.6 s) ---
+   0.20 s   Tu vends sur WhatsApp ou Instagram ?
+   2.50 s   Tes clients te cherchent sur Google,
+   4.80 s   et trouvent tes concurrents.
+   6.15 s   Pas de site, pas de confiance, pas de ventes.
+   8.70 s   On crée ton site web pro.
+  10.25 s   Rapide, moderne, sur mesure.
+  12.50 s   Plus de clients, plus de ventes !
+  14.45 s   Devis gratuit ! Scanne le QR code, ou écris-nous.
+
+--- Vidéo 02 · du-code-a-ton-site (19.5 s) ---
+   0.30 s   Tu as une idée ? On la transforme en site web !
+   3.70 s   On écrit le code, ligne après ligne,
+   6.30 s   on vérifie que tout fonctionne,
+   8.50 s   et ton site est en ligne !
+  10.80 s   Rapide, adapté au mobile, et fait sur mesure.
+  14.40 s   Ton idée mérite un vrai site. Devis gratuit, écris-nous !
+
+--- Vidéo 03 · avant-apres-ton-site (17.6 s) ---
+   0.40 s   Avant : les mêmes questions, cent fois par jour.
+   3.85 s   Tu réponds à tout, tout le temps !
+   6.50 s   Après : un site clair, avec tes prix et un seul lien !
+  10.50 s   Ils voient tout, ils commandent.
+  13.00 s   Prêt pour l'après ? Devis gratuit, écris-nous !
+
+--- Vidéo 04 · combien-coute-un-site-web (17.3 s) ---
+   0.20 s   Un site web, ça coûte combien ?
+   2.85 s   Voici la vraie réponse !
+   4.70 s   Ça dépend du type de projet,
+   6.30 s   des options,
+   7.25 s   et du délai.
+   8.10 s   Résultat : un devis sur mesure, rien que pour toi.
+  11.00 s   Dis-nous ton besoin, on s'occupe du devis !
+  13.50 s   Devis gratuit ! Parlons de ton budget.
+
+--- Vidéo 05 · tu-as-besoin-d-un-site-si (19.4 s) ---
+   0.30 s   Tu as besoin d'un site web si,
+   2.25 s   on te demande : t'as un site ?
+   4.25 s   Tu répètes tes prix cent fois par jour.
+   6.25 s   Tes concurrents sont déjà sur Google.
+   8.25 s   Tu veux vendre même la nuit.
+  10.25 s   Tu veux que les clients te fassent confiance.
+  12.40 s   Deux cases cochées ? Il te faut un site web !
+  15.30 s   Devis gratuit, écris-nous !
+
+--- Vidéo 06 · ton-site-vend-pendant-que-tu-dors (18.4 s) ---
+   0.30 s   Pendant que tu dors,
+   1.95 s   une commande !
+   3.35 s   Un message !
+   4.75 s   Un paiement !
+   6.10 s   Une autre commande !
+   7.50 s   Et un avis cinq étoiles !
+   9.30 s   Ton site, un vendeur qui ne dort jamais !
+  11.40 s   Tu te réveilles, et les commandes sont déjà là !
+  14.70 s   Devis gratuit : écris-nous !
+
+--- Vidéo 07 · ton-app-mobile-a-ton-nom (18.0 s) ---
+   0.45 s   Ton business dans la poche de tes clients !
+   3.95 s   Ils choisissent, ils ajoutent au panier,
+   7.05 s   et commandent en un clic !
+   9.40 s   Une vraie application, à ton nom, avec ton logo et tes couleurs.
+  13.65 s   Devis gratuit ! Scanne le QR code, ou écris-nous sur WhatsApp.
+
+--- Vidéo 08 · comment-ca-marche-3-etapes (17.2 s) ---
+   0.25 s   Comment ça marche ?
+   1.70 s   Un : tu nous contactes, on parle de ton projet.
+   4.40 s   Deux : on crée ta maquette, et tu valides le design.
+   7.10 s   Trois : ton site est en ligne !
+   9.15 s   Simple, rapide, pro !
+  12.70 s   Lance ton projet : devis gratuit, écris-nous !
+
+--- Vidéo 09 · pov-un-client-te-demande-ton-site (21.2 s) ---
+   0.30 s   Un client te demande si tu as un site web.
+   3.50 s   Toi, tu mets tout dans ton statut WhatsApp,
+   6.50 s   il veut le catalogue, tu cherches les photos,
+   9.90 s   résultat : il va voir ailleurs.
+  12.55 s   Ça t'est déjà arrivé ?
+  13.90 s   Avec un site pro, tout est dans un seul lien.
+  16.90 s   Évite de perdre des clients : devis gratuit, écris-nous !
+
+--- Vidéo 10 · tout-ce-qu-on-peut-creer-pour-toi (16.6 s) ---
+   0.30 s   Tout ce qu'on peut créer pour toi !
+   2.60 s   Un site vitrine, une boutique en ligne, une application mobile, et bien plus encore !
+   7.80 s   Une idée ? On la transforme en réalité !
+  11.90 s   Parlons de ton projet : devis gratuit !
+
+--- Vidéo 11 · scanne-moi-qr-code (15.0 s) ---
+   0.25 s   Scanne ce QR code avec ton téléphone.
+   2.75 s   Ton appareil photo le détecte,
+   4.70 s   et WhatsApp s'ouvre avec un message déjà écrit !
+   8.40 s   Tu peux aussi nous appeler directement.
+  11.30 s   Devis gratuit : scanne ou appelle !
+
+--- Vidéo 12 · vrai-ou-faux-site-web (24.5 s) ---
+   0.20 s   Vrai ou faux ?
+   2.20 s   Réservé aux grandes entreprises ?
+   4.35 s   Faux ! Pour tous les commerces.
+   6.60 s   C'est trop compliqué ?
+   8.75 s   Faux ! On s'occupe de tout.
+  11.00 s   WhatsApp et Instagram suffisent ?
+  13.15 s   Pas assez ! Ton propre site.
+  15.40 s   On peut discuter du prix ?
+  17.55 s   Vrai ! Devis gratuit.
+  20.00 s   Dernière question : on en parle ? Devis gratuit, écris-nous !

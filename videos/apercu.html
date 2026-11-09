@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aperçu des vidéos TikTok</title>
+<style>
+  :root { color-scheme: dark; --bg:#0f1115; --card:#181b22; --line:#262b36; --fg:#f3f4f6; --soft:#9aa3b2; --acc:#b6ff3b; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:"Segoe UI", system-ui, -apple-system, sans-serif; }
+  header { max-width:1100px; margin:0 auto; padding:28px 16px 6px; }
+  h1 { margin:0 0 6px; font-size:1.5rem; }
+  header p { margin:0; color:var(--soft); font-size:.95rem; line-height:1.4; }
+  section { max-width:1100px; margin:0 auto; padding:10px 16px 20px; }
+  h2.sec { margin:22px 0 4px; font-size:1.15rem; color:var(--acc); }
+  p.hint { margin:0 0 12px; color:var(--soft); font-size:.88rem; }
+  .grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fill, minmax(210px, 1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; }
+  video { display:block; width:100%; aspect-ratio:9/16; background:#000; object-fit:cover; }
+  .meta { padding:12px 14px 14px; }
+  .num { color:var(--acc); font-weight:700; font-size:.78rem; letter-spacing:.08em; }
+  h2.t { margin:2px 0 6px; font-size:1rem; line-height:1.25; }
+  .sub { margin:0; color:var(--soft); font-size:.82rem; display:flex; justify-content:space-between; gap:8px; }
+  a { color:var(--acc); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Aperçu des vidéos TikTok</h1>
+  <p>Clique sur ▶ pour lire, avec le son. Format vertical 1080×1920. Chaque vidéo se termine par le QR code et le numéro.</p>
+</header>
+<div id="root"></div>
+<script>
+  const VER = Date.now();   // évite que le navigateur affiche d'anciennes versions en cache
+  // [fichier, titre, durée sans voix off, durée avec voix off]
+  const VIDEOS = [
+    ["01_sans-site-tu-rates-des-clients", "Sans site, tu rates des clients", "18,6 s"],
+    ["02_du-code-a-ton-site", "Du code à ton site", "19,5 s"],
+    ["03_avant-apres-ton-site", "Avant / Après", "17,6 s"],
+    ["04_combien-coute-un-site-web", "Un site web, ça coûte combien ?", "17,3 s"],
+    ["05_tu-as-besoin-d-un-site-si", "Tu as besoin d'un site si…", "19,4 s"],
+    ["06_ton-site-vend-pendant-que-tu-dors", "Ton site vend pendant que tu dors", "18,4 s"],
+    ["07_ton-app-mobile-a-ton-nom", "Ton app mobile, à ton nom", "18,0 s"],
+    ["08_comment-ca-marche-3-etapes", "Comment ça marche ? 3 étapes", "17,2 s"],
+    ["09_pov-un-client-te-demande-ton-site", "POV : un client te demande ton site", "21,2 s"],
+    ["10_tout-ce-qu-on-peut-creer-pour-toi", "Tout ce qu'on peut créer pour toi", "16,6 s"],
+    ["11_scanne-moi-qr-code", "Scanne-moi (QR WhatsApp et appel)", "15,0 s"],
+    ["12_vrai-ou-faux-site-web", "Vrai ou faux ?", "19,7 s"]
+  ];
+  const VOICE_DUR = { "12": "24,5 s" };     // la vidéo 12 avec voix off a des cartes plus longues
+  const root = document.getElementById("root");
+
+  function section(title, hint, items) {
+    const sec = document.createElement("section");
+    sec.innerHTML = '<h2 class="sec"></h2><p class="hint"></p><div class="grid"></div>';
+    sec.querySelector("h2").textContent = title;
+    sec.querySelector("p").textContent = hint;
+    const grid = sec.querySelector(".grid");
+    items.forEach(([file, name, dur, n, label]) => {
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML =
+        '<video controls preload="metadata" playsinline poster="couvertures/' + n + '.jpg?v=' + VER + '" src="' + file + '.mp4?v=' + VER + '"></video>' +
+        '<div class="meta"><div class="num"></div><h2 class="t"></h2>' +
+        '<p class="sub"><span></span><a href="' + file + '.mp4" download>Télécharger</a></p></div>';
+      card.querySelector(".num").textContent = label;
+      card.querySelector("h2").textContent = name;
+      card.querySelector("span").textContent = dur;
+      grid.appendChild(card);
+    });
+    root.appendChild(sec);
+  }
+
+  const num = (i) => String(i + 1).padStart(2, "0");
+  section("Avec voix off (voix de femme)", "Les 12 vidéos avec une voix off en français.",
+    VIDEOS.map(([f, t, d], i) => [f + "_voix-off-femme", t, VOICE_DUR[num(i)] || d, num(i), "VIDÉO " + num(i) + " · VOIX OFF"]));
+  section("Sans voix off", "Les mêmes vidéos, avec seulement la musique et les effets sonores.",
+    VIDEOS.map(([f, t, d], i) => [f, t, d, num(i), "VIDÉO " + num(i)]));
+  section("Autre voix (vidéo 7)", "Version de la vidéo 7 avec une voix d'homme.",
+    [["07_ton-app-mobile-a-ton-nom_voix-off-homme", "Ton app mobile · voix d'homme", "18,0 s", "07", "VIDÉO 07 · VOIX D'HOMME"]]);
+</script>
+</body>
+</html>
